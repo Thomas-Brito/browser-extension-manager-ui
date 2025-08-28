@@ -1,0 +1,29 @@
+{
+  "name": "browser-extensions-manager-ui",
+  "version": "1.0.0",
+  "description": "![Design preview for the Browser extensions manager UI coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Brito/browser-extension-manager-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thomas-Brito/browser-extension-manager-ui/issues"
+  },
+  "homepage": "https://github.com/Thomas-Brito/browser-extension-manager-ui#readme",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  },
+  "dependencies": {
+    "vite-plugin-string": "^1.2.3"
+  }
+}

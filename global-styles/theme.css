@@ -1,0 +1,95 @@
+/** Colors */
+
+:root {
+  color-scheme: light;
+  --font-family: "Noto Sans", sans-serif;
+}
+
+:root[data-theme='light'] {
+
+  --primary-color: hsl(3, 77%, 44%);
+  --primary-color-states: hsl(3, 71%, 56%);
+
+  --document-bg-color: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+
+  --element-bg-color: hsl(220, 100%, 99%);
+  --element-box-shadow: 0px 3px 5px 1px hsl(0, 0%, 78%);
+  --element-outline: solid 0.0625rem hsl(0, 0%, 78%);
+  
+  --header-bg-color: var(--element-bg-color);
+
+  --theme-button-bg-color:hsl(0, 0%, 93%);
+  --theme-button-bg-color--hover:hsl(0, 0%, 78%);
+  --theme-button-outline-color--focus: var(--primary-color-states);
+
+  --state-button-bg-color: var(--element-bg-color);
+  --state-button-bg-color--hover: hsl(0, 0%, 78%);
+  --state-button-bg-color--checked: var(--primary-color);
+  --state-button-bg-color--checked--focus: var(--primary-color-states);
+  --state-button-bg-color--checked--hover: var(--primary-color-states);
+  --state-button-outline-color--focus: var(--primary-color-states);
+
+  --remove-button-bg-color: var(--element-bg-color);
+  --remove-button-bg-color--hover: var(--primary-color-states);
+  --remove-button-bg-color--focus: hsl(60, 3%, 93%);
+  --remove-button-outline-color--focus: var(--primary-color-states);
+
+  --toggle-outline--focus: var(--primary-color-states);
+  --toggle-off-bg-color: hsl(240, 2%, 78%);
+  --toggle-on-bg-color: var(--primary-color);
+  --toggle-on-bg-color--hover: var(--primary-color-states);
+
+  --title-text-color: hsl(227, 75%, 14%);
+  --description-text-color: hsl(226, 11%, 37%);
+  --button-text-color: hsl(227, 75%, 14%);
+  --button-text-color--checked: hsl(220, 100%, 99%);
+}
+
+:root[data-theme='dark'] {
+
+  --primary-color: hsl(3, 86%, 64%);
+  --primary-color-states: hsl(3, 71%, 56%);
+
+  --secundary-color: hsl(224, 12%, 36%);
+
+  --document-bg-color: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  --element-bg-color: hsl(226, 25%, 17%);
+  --element-box-shadow: 0px 1px 1px 1px hsl(225, 23%, 24%);
+  --element-outline: solid 0.0625rem hsl(0, 0%, 78%);
+  
+  --header-bg-color: var(--element-bg-color);
+
+  --theme-button-bg-color:hsl(230, 23%, 25%);
+  --theme-button-bg-color--hover: var(--secundary-color);
+  --theme-button-bg-color--focus: var(--secundary-color);
+  --theme-button-outline-color--focus: var(--primary-color-states);
+
+  --state-button-bg-color: var(--element-bg-color);
+  --state-button-bg-color--hover: var(--secundary-color);
+  --state-button-bg-color--focus: var(--secundary-color);
+  --state-button-bg-color--checked: var(--primary-color);
+  --state-button-bg-color--checked--hover: var(--primary-color-states);
+  --state-button-bg-color--checked--focus: var(--primary-color-states);
+  --state-button-outline-color--focus: var(--primary-color-states);
+
+  --remove-button-bg-color: var(--element-bg-color);
+  --remove-button-bg-color--hover: var(--primary-color-states);
+  --remove-button-bg-color--focus: var(--secundary-color);
+  --remove-button-outline-color--focus: var(--primary-color-states);
+
+  --toggle-outline--focus: var(--primary-color-states);
+  --toggle-off-bg-color: var(--secundary-color);
+  --toggle-on-bg-color: var(--primary-color);
+  --toggle-on-bg-color--hover: var(--primary-color-states);
+
+  --title-text-color: hsl(200, 60%, 99%);
+  --description-text-color: hsl(215, 14%, 75%);
+  --button-text-color: hsl(215, 14%, 75%);
+  --button-text-color--checked: hsl(227, 75%, 14%);
+}
+
+:root {
+  --title-font: 700 clamp(1.75rem, calc(1.659rem + 0.455vw), 2rem)/150% var(--font-family); /* min: 28px, max: 32px */
+  --state-button-font: 500 clamp(1rem, calc(0.955rem + 0.227vw), 1.125rem)/150% var(--font-family); /* min: 16px, max: 18px */
+}

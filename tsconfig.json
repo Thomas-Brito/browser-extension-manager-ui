@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["es2020", "dom"],
+    "rootDir": "./",
+    "outDir": "./build",
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "*.d.ts", "src/**/*.svelte", "vite.config.ts", "components/extension-cards/extension-card.ts"]
+}

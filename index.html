@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light" id="sheme"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <script type="module" src="src/index.ts"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global-styles/normalize.css">
+  <link rel="stylesheet" href="global-styles/theme.css">
+  <link rel="stylesheet" href="global-styles/base.css">
+</head>
+<body>
+  <header id="header"> 
+    <img src="assets/images/logo.svg" alt="Extensions Logo" id="extensions-logo">
+    <img src="assets/images/icon-moon.svg" alt="Change theme, light/dark" id="toggle-theme">
+  </header>
+  <nav id="nav">
+    <h1 id="title">Extensions List</h1>
+    <form id="nav__state-buttons">
+      <input type="radio" name="state" id="all" value="all" checked>
+      <label for="all">All</label>
+      <input type="radio" name="state" id="active" value="active">
+      <label for="active">Active</label>
+      <input type="radio" name="state" id="inactive" value="inactive">
+      <label for="inactive">Inactive</label>
+    </form>
+  </nav>
+  <main id="container">
+    <extension-card extension="DevLens"></extension-card>
+    <extension-card extension="StyleSpy"></extension-card>
+    <extension-card extension="SpeedBoost"></extension-card>
+    <extension-card extension="JSONWizard"></extension-card>
+    <extension-card extension="TabMaster Pro"></extension-card>
+    <extension-card extension="ViewportBuddy"></extension-card>
+    <extension-card extension="Markup Notes"></extension-card>
+    <extension-card extension="GridGuides"></extension-card>
+    <extension-card extension="Palette Picker"></extension-card>
+    <extension-card extension="LinkChecker"></extension-card>
+    <extension-card extension="DOM Snapshot"></extension-card>
+    <extension-card extension="ConsolePlus"></extension-card>
+  </main>
+</body>
+</html>
