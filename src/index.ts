@@ -9,15 +9,15 @@ const logo = document.getElementById(`extensions-logo`) as HTMLImageElement;
 
 toggleTheme.addEventListener(`click`, () => {
   if (toggleTheme.src.includes(`moon`)) {
-    toggleTheme.src = `./assets/icon-sun.svg`;
+    toggleTheme.src = `./assets/images/icon-sun.svg`;
     html.dataset.theme = `dark`;
     sheme.content = `dark`;
-    logo.src = `./assets/logo-dark.svg`;
+    logo.src = `./assets/images/logo-dark.svg`;
   } else {
-    toggleTheme.src = `./assets/icon-moon.svg`;
+    toggleTheme.src = `./assets/images/icon-moon.svg`;
     html.dataset.theme = `light`;
     sheme.content = `light`;
-    logo.src = `./assets/logo.svg`;
+    logo.src = `./assets/images/logo.svg`;
   }
 })
 
